@@ -1,0 +1,76 @@
+.header {
+  position: relative;
+  width: 100%;
+  background-color: #231f20;
+}
+.header__content {
+  display: grid;
+  gap: 44px;
+  grid-template-columns: auto 1fr;
+  padding: 20px;
+  align-items: center;
+  height: 100px;
+}
+.header__content_logo img {
+  width: 55px;
+}
+.header__content_nav--menus {
+  color: #ffffff;
+  display: flex;
+}
+.header__content_nav--menus_menu {
+  margin-right: 30px;
+  display: flex;
+}
+.header__content_nav--menus_menu .menu_title {
+  cursor: pointer;
+  font-weight: 500;
+}
+.header__content_nav--menus_menu .menu_title:hover {
+  color: #ffcb0a;
+}
+.header__content_nav--menus_menu .menu_title--has-more {
+  margin-left: 2px;
+  display: flex;
+}
+.header__content .menu_dropdown {
+  position: absolute;
+  top: 102px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.header__content .menu_dropdown--options {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.header__content .menu_dropdown--options .drop-item {
+  border-radius: 20px;
+  background: #ffcb0a1c;
+  padding: 20px 22px 20px 44px;
+}
+.header__content .menu_dropdown--options .drop-item > p:first-child {
+  color: #ffcb0a;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.header__content .menu_dropdown--options .drop-item p:nth-child(2) {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+.header__content .menu_dropdown_footer {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 203, 10, 0.2);
+  background-image: url("https://global-uploads.webflow.com/5fad86e1f5867747a5250efa/6024031efd63c59c0b978629_scribble-5.svg");
+  background-position: 100% 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=header.styles.css.map */

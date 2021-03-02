@@ -1,0 +1,100 @@
+.footer {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.footer__links-subscribe {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__links-subscribe .links {
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.footer__links-subscribe .links p {
+  margin-bottom: 10px;
+}
+.footer__links-subscribe .links a {
+  line-height: 30px;
+  transition: color 0.2s;
+}
+.footer__links-subscribe .links a:hover {
+  color: #3898eb;
+}
+@media screen and (max-width: 950px) {
+  .footer__links-subscribe {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+}
+.footer__links-subscribe .subscribe {
+  display: flex;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+.footer__links-subscribe .subscribe-input {
+  display: block;
+  width: 100%;
+  height: 38px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  vertical-align: middle;
+  margin-right: 12px;
+  margin-bottom: 0;
+  padding: 0 10px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background-color: #e9e9e9;
+}
+.footer__links-subscribe .subscribe-button {
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
+  padding: 9px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #ffcb0a;
+  box-shadow: 1px 1px 3px 0 #cecece;
+  font-weight: 500;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.footer__links-subscribe .subscribe-button:hover {
+  transform: scale(1.01);
+}
+.footer__logo-socials, .footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.footer__logo-socials {
+  border-bottom: 1px solid #e9e9e9;
+}
+.footer__logo-socials .socials {
+  display: grid;
+  gap: 10px;
+  grid-auto-flow: column;
+  opacity: 0.5;
+}
+.footer__logo-socials .socials svg {
+  cursor: pointer;
+}
+.footer__copyright {
+  font-size: 14px;
+  opacity: 0.8;
+}
+.footer__copyright > span:nth-child(2) {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+}
+.footer__copyright .divide {
+  height: 100%;
+  width: 1px;
+  background: #e9e9e9;
+}
+
+/*# sourceMappingURL=footer.style.css.map */

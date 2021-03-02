@@ -1,0 +1,9 @@
+.news-section .card > div {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+}
+.news-section .card div:nth-child(2) {
+  width: 100%;
+}
+
+/*# sourceMappingURL=news.styles.css.map */
