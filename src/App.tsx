@@ -5,7 +5,7 @@ import Footer from './web/components/composite/footer';
 import NewsSection from './web/components/composite/newsection';
 import ArticleBlock from './web/components/composite/articleblock';
 import CollectionSection from './web/components/composite/collectionsblock';
-import MainArticleSection from './web/components/mainarticlesection';
+import MainArticleSection from './web/components/composite/mainarticlesection';
 
 function App() {
     return (
@@ -13,9 +13,9 @@ function App() {
             <Header />
             <div className={'site-contents container'}>
                 <NewsSection />
+                <MainArticleSection/>
                 <ArticleBlock/>
                 <CollectionSection/>
-                <MainArticleSection/>
                 <Footer />
             </div>
         </div>

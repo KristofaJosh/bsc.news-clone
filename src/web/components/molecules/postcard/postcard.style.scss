@@ -1,0 +1,50 @@
+.post-card {
+    //height: 100%;
+    //max-height: 450px;
+    height: 450px;
+    overflow: hidden;
+
+    &__as-describe {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        height: 100%;
+        .image {
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .description {
+            padding: 10px;
+            display: grid;
+            grid-template-rows: 1fr auto auto;
+            gap: 20px;
+            .title{
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            .button {
+                padding: 9px 15px;
+                border-radius: 5px;
+                font-size: 10px;
+                box-shadow: 0 0 10px 0 #d3d3d3;
+            }
+
+            .author-date {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span {
+                    font-size: 14px;
+                    a {
+                        font-size: 17px !important;
+                        font-weight: 500;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+}

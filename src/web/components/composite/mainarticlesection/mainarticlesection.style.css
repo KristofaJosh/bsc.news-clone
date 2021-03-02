@@ -1,0 +1,12 @@
+.main-article__collection-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+@media screen and (max-width: 950px) {
+  .main-article__collection-cards {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=mainarticlesection.style.css.map */
