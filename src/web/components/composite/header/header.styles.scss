@@ -14,6 +14,9 @@
                 width: 55px;
             }
         }
+        &__mobile-nav {
+            display: none;
+        }
         &_nav {
             &--menus {
                 color: #ffffff;
@@ -56,7 +59,7 @@
                         margin-bottom: 10px;
                         text-transform: capitalize;
                     }
-                    p:nth-child(2){
+                    p:nth-child(2) {
                         font-size: 14px;
                         font-weight: 300;
                         line-height: 20px;
@@ -73,6 +76,30 @@
                 background-position: 100% 50%;
                 background-size: auto;
                 background-repeat: no-repeat;
+            }
+        }
+    }
+    @media screen and (max-width: 1080px){
+        background-color: white;
+        border-bottom: 1px solid #4455671c;
+        &__content {
+            &_nav--menus {
+                display: none;
+            }
+            &__mobile-nav {
+                display: flex;
+                justify-content: flex-end;
+                .hamburger {
+                    padding: 15px;
+                    border-radius: 10px;
+                    background-color: black;
+                    svg{
+                        display: flex;
+                    }
+                    &--active{
+                        background-color: #ffcb0a;
+                    }
+                }
             }
         }
     }

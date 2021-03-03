@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.styles.css';
 import { MENUS } from './menus';
-import { MdKeyboardArrowDown } from 'react-icons/all';
+import { GiHamburgerMenu, MdKeyboardArrowDown } from 'react-icons/all';
 
 const Header = () => {
     const showDrops = (drops: any) => {
@@ -40,6 +40,11 @@ const Header = () => {
                 {/*        <p>Are you a journalist or an editor?</p>*/}
                 {/*    </div>*/}
                 {/*</div>*/}
+                <div className="header__content__mobile-nav">
+                    <div className={'hamburger'}>
+                        <GiHamburgerMenu size={18} color={'white'}/>
+                    </div>
+                </div>
             </div>
         </div>
     );
