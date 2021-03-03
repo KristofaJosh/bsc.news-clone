@@ -1,0 +1,36 @@
+.tab-card__tabs {
+  border-bottom: 3px solid #ffcb0a;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  transition: all 0.2s;
+}
+.tab-card__tabs-tab {
+  text-align: center;
+  font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
+}
+.tab-card__tabs-tab p {
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.tab-card .is-active {
+  background-color: #ffcb0a;
+}
+.tab-card .tab-content {
+  height: 80px;
+  padding: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #94959873;
+}
+.tab-card .tab-content a {
+  font-weight: 500;
+  opacity: 0.8;
+}
+.tab-card .tab-content a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=tabcard.style.css.map */

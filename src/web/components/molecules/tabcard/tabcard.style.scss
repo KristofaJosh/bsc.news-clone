@@ -1,0 +1,36 @@
+.tab-card {
+    &__tabs {
+        border-bottom: 3px solid #ffcb0a;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        transition: all 0.2s;
+        &-tab {
+            text-align: center;
+            font-weight: 700;
+            padding: 10px;
+            cursor: pointer;
+            p {
+                text-transform: uppercase;
+                white-space: nowrap;
+            }
+        }
+    }
+    .is-active {
+        background-color: #ffcb0a;
+    }
+    .tab-content {
+        height: 80px;
+        padding: 10px;
+        font-size: 14px;
+        a {
+            font-weight: 500;
+            opacity: 0.8;
+            &:hover {
+                text-decoration: underline;
+                opacity: 1;
+            }
+        }
+        border-bottom: 1px solid #94959873;
+    }
+}

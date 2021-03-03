@@ -1,11 +1,17 @@
 .news-section {
-    .card {
-        > div {
+    &__content {
+        &--section-1 {
             display: grid;
-            grid-template-columns: 1fr 200px;
+            grid-template-columns: 1fr 350px;
         }
-        div:nth-child(2) {
+        &--section-2 {
             width: 100%;
+        }
+
+        @media screen and (max-width: 950px) {
+            &--section-1 .tab-card {
+                display: none;
+            }
         }
     }
 }
