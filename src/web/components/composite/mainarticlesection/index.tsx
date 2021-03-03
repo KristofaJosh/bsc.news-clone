@@ -6,7 +6,6 @@ import './mainarticlesection.style.css';
 const MainArticleSection = () => {
     return (
         <div className={'main-article'}>
-            <div className={'main-article__collection-cards'}>
                 {ARTICLES.map((el) => (
                     <PostCard
                         type={el.type}
@@ -17,8 +16,6 @@ const MainArticleSection = () => {
                         author={el.author}
                     />
                 ))}
-            </div>
-            <div className="main-article__small-device">Small device</div>
         </div>
     );
 };

@@ -1,11 +1,4 @@
-type Articles_Type = {
-    type: 'asImageLink' | 'asDescribe';
-    titleLink: { title: string; route: string };
-    button: { text: string; link: string; type: string };
-    author: { name: string; route: string };
-    image: { src: string; route: string };
-    date: any;
-};
+import { Articles_Type } from '../../../../interfaces/collectionInterface';
 
 let date: any = new Date().toDateString().split(' ');
 date.splice(2, 0, ',')

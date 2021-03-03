@@ -24,12 +24,6 @@
   font-size: 18px;
   font-weight: 500;
 }
-.post-card__as-describe .description .button {
-  padding: 9px 15px;
-  border-radius: 5px;
-  font-size: 10px;
-  box-shadow: 0 0 10px 0 #d3d3d3;
-}
 .post-card__as-describe .description .author-date {
   display: flex;
   justify-content: space-between;
@@ -42,6 +36,53 @@
   font-size: 17px !important;
   font-weight: 500;
   text-transform: capitalize;
+}
+.post-card-mobile {
+  display: flex;
+  box-shadow: unset;
+}
+.post-card-mobile .image {
+  overflow: hidden;
+  border-radius: 10px;
+  margin-right: 10px;
+  width: 230px;
+}
+.post-card-mobile .description {
+  display: grid;
+  align-content: space-around;
+}
+.post-card-mobile .description .author-date {
+  font-size: 12px;
+}
+.post-card-mobile .description .author-date > span {
+  padding: 0 10px;
+  border-right: 1px solid #333333;
+}
+.post-card-mobile .description .author-date > span:first-child {
+  padding-left: 0;
+}
+.post-card-mobile .description .author-date > span:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+.post-card-mobile .description .summary {
+  font-size: 12px;
+  font-weight: 400;
+}
+@media screen and (max-width: 920px) {
+  .post-card-mobile {
+    flex-direction: column;
+  }
+  .post-card-mobile .image {
+    margin-bottom: 10px;
+    margin-right: 0;
+    width: 100%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .post-card-mobile .description {
+    gap: 10px;
+  }
 }
 
 /*# sourceMappingURL=postcard.style.css.map */

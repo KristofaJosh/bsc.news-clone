@@ -14,3 +14,31 @@
     gap: 20px;
     padding-top: 20px;
 }
+
+.button-tag {
+    padding: 6px 15px;
+    border-radius: 5px;
+    font-size: 10px;
+    box-shadow: 0 0 10px 0 #d3d3d3;
+}
+
+@mixin text-truncate {
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-truncate {
+    @include text-truncate();
+    &_2 {
+        @include text-truncate();
+        -webkit-line-clamp: 2;
+    }
+    &_3 {
+        @include text-truncate();
+        -webkit-line-clamp: 3;
+    }
+}

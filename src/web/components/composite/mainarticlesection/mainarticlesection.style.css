@@ -1,10 +1,10 @@
-.main-article__collection-cards {
+.main-article {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
 @media screen and (max-width: 950px) {
-  .main-article__collection-cards {
+  .main-article {
     display: none;
   }
 }

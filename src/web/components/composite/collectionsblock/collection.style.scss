@@ -1,0 +1,47 @@
+.collections-block {
+    display: grid;
+    gap: 20px;
+
+    > div:last-child {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .load-more {
+            border: none;
+            background: black;
+            color: white;
+            border-radius: 8px;
+            padding: 6px 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            svg {
+                display: flex;
+            }
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+
+        @media screen and (max-width: 950px) {
+            display: none;
+        }
+    }
+    &__small-device {
+        display: grid;
+        gap: 10px;
+        .post-card-mobile {
+            border-radius: 0;
+            border-bottom: 1px solid black;
+            padding-bottom: 5px;
+        }
+        .post-card-mobile:last-child {
+            padding-bottom: unset;
+            border-bottom: unset;
+        }
+    }
+}

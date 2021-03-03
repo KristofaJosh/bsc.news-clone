@@ -16,4 +16,38 @@
   padding-top: 20px;
 }
 
+.button-tag {
+  padding: 6px 15px;
+  border-radius: 5px;
+  font-size: 10px;
+  box-shadow: 0 0 10px 0 #d3d3d3;
+}
+
+.text-truncate {
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-truncate_2 {
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+}
+.text-truncate_3 {
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+}
+
 /*# sourceMappingURL=App.css.map */
