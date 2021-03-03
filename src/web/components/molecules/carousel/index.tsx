@@ -1,7 +1,7 @@
 import React from 'react';
 // @ts-ignore
 import Slider from 'infinite-react-carousel';
-import './carousel.styles.css'
+import './carousel.styles.css';
 
 const images = [
     {
@@ -28,12 +28,17 @@ const images = [
 const Carousel = () => {
     return (
         <div className={'carousel'}>
-            <Slider dots rows={1}  adaptiveHeight={true}>
+            <Slider dots rows={1} adaptiveHeight={true}>
                 {images.map((el, i) => (
-                    <div key={i} className={'carousel__content'}>
-                        <img src={el.src} alt="" />
-                        <div>info</div>
-                    </div>
+                    <a href="/">
+                        <div key={i} className={'carousel__content'}>
+                            <img src={el.src} alt="" />
+                            <div className={'top-message'}>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, praesentium.{' '}
+                            </div>
+                            <div className={'bottom-message'}>info</div>
+                        </div>
+                    </a>
                 ))}
             </Slider>
         </div>

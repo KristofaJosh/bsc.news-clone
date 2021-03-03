@@ -9,13 +9,20 @@
   width: 100%;
   height: 450px;
 }
-.carousel__content > div {
+.carousel__content .bottom-message,
+.carousel__content .top-message {
   background-color: #0000006e;
   padding: 19px;
   color: white;
   position: absolute;
-  bottom: 0;
   width: 100%;
+}
+.carousel__content .bottom-message {
+  bottom: 0;
+}
+.carousel__content .top-message {
+  top: 0;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=carousel.styles.css.map */
