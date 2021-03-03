@@ -10,6 +10,9 @@
         }
 
         @media screen and (max-width: 950px) {
+            &--section-1 {
+                grid-template-columns: 1fr;
+            }
             &--section-1 .tab-card {
                 display: none;
             }

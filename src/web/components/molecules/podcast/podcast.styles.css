@@ -15,12 +15,12 @@
 .podcast__card {
   display: flex;
 }
-.podcast__card img {
+.podcast__card > img {
   width: 100%;
   max-width: 180px;
   margin-right: 10px;
 }
-.podcast__card p {
+.podcast__card > p {
   font-weight: 500;
 }
 .podcast--mobile {
@@ -34,7 +34,7 @@
     display: flex;
     flex-direction: column;
   }
-  .podcast h4 {
+  .podcast > h4 {
     text-align: unset;
   }
   .podcast__contents {

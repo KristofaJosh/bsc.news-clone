@@ -31,8 +31,8 @@ const PodCast = () => {
             <div className={'podcast podcast--desktop'}>
                 <h4>PodCast</h4>
                 <div className="podcast__contents">
-                    {podcastContent.map((el) => (
-                        <a href={el.link} className={'podcast__card'}>
+                    {podcastContent.map((el,i) => (
+                        <a href={el.link} className={'podcast__card'} key={i}>
                             <img src={el.image} alt="" />
                             <p>{el.title}</p>
                         </a>
@@ -42,12 +42,12 @@ const PodCast = () => {
             <div className={'podcast podcast--mobile'}>
                 <h4>PodCast</h4>
                 <div className="podcast__contents">
-                    {podcastContent.map((el) => (
-                        <a href={el.link} className={'podcast__card'}>
+                    {podcastContent.map((el, i) => (
+                        <a href={el.link} className={'podcast__card'} key={i}>
                             <img src={el.image} alt="" />
                             <div>
                                 <p>{el.title}</p>
-                                <small className={'text-truncate_3'}>{el.description}</small>
+                                <small>{el.description}</small>
                             </div>
                         </a>
                     ))}

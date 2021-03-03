@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["news.styles.scss"],"names":[],"mappings":"AAEQ;EACI;EACA;;AAEJ;EACI;EACA;;AAGJ;EACI;IACI","file":"news.styles.css"}
+{"version":3,"sourceRoot":"","sources":["news.styles.scss"],"names":[],"mappings":"AAEQ;EACI;EACA;;AAEJ;EACI;EACA;;AAGJ;EACI;IACI;;EAEJ;IACI","file":"news.styles.css"}

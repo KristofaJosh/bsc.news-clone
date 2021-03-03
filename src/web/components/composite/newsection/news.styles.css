@@ -7,6 +7,9 @@
   margin-top: 20px;
 }
 @media screen and (max-width: 950px) {
+  .news-section__content--section-1 {
+    grid-template-columns: 1fr;
+  }
   .news-section__content--section-1 .tab-card {
     display: none;
   }
