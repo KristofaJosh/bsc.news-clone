@@ -1,0 +1,12 @@
+.article-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media screen and (max-width: 750px) {
+  .article-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=articleblock.style.css.map */

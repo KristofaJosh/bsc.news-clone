@@ -1,0 +1,49 @@
+.collection-card__card {
+  background: #7b7b7d;
+  padding: 10px;
+  display: grid;
+  gap: 20px;
+}
+.collection-card__card .multi-images {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+.collection-card__card .multi-images img {
+  border-radius: 10px;
+  border: 3px solid white;
+  width: 100%;
+  max-width: 300px;
+}
+.collection-card__card .description {
+  color: white;
+}
+.collection-card__card .description p:first-child {
+  font-weight: bold;
+  font-size: 25px;
+}
+.collection-card__card .description p:last-child {
+  font-size: 14px;
+}
+.collection-card__card .type-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.collection-card__card .type-button p {
+  font-weight: 700;
+  color: white;
+}
+.collection-card__card .type-button button {
+  padding: 6px 15px;
+  border: none;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 #d3d3d3;
+}
+.collection-card__card .type-button button svg {
+  margin-right: 5px;
+}
+
+/*# sourceMappingURL=collectioncard.style.css.map */

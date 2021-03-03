@@ -1,0 +1,52 @@
+.collection-card {
+    &__card {
+        background: #7b7b7d;
+        padding: 10px;
+        display: grid;
+        gap: 20px;
+
+        .multi-images {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr;
+            img {
+                border-radius: 10px;
+                border: 3px solid white;
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        .description {
+            color: white;
+            p:first-child {
+                font-weight: bold;
+                font-size: 25px;
+            }
+            p:last-child {
+                font-size: 14px;
+            }
+        }
+
+        .type-button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+                font-weight: 700;
+                color: white;
+            }
+            button {
+                padding: 6px 15px;
+                border: none;
+                display: flex;
+                align-items: center;
+                border-radius: 5px;
+                box-shadow: 0 0 10px 0 #d3d3d3;
+                svg {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
