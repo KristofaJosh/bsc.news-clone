@@ -2,6 +2,7 @@ import React from 'react';
 // @ts-ignore
 import Slider from 'infinite-react-carousel';
 import './carousel.styles.css';
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/all';
 
 const images = [
     {
@@ -46,11 +47,17 @@ const images = [
 const Carousel = () => {
     return (
         <div className={'carousel'}>
-            <Slider dots rows={1} adaptiveHeight={true} autoplay={true}>
+            <Slider
+                dots
+                rows={1}
+                adaptiveHeight={true}
+                autoplay={true}
+                prevArrow={<MdKeyboardArrowLeft color={'white'} size={25} />}
+                nextArrow={<MdKeyboardArrowRight color={'white'} size={25} />}>
                 {images.map((el, i) => (
-                    <a href="/">
+                    <a href='/'>
                         <div key={i} className={'carousel__content'}>
-                            <img src={el.src} alt="" />
+                            <img src={el.src} alt='' />
                             <div className={'top-message'}>{el.info.top}</div>
                             <div className={'bottom-message'}>{el.info.bottom}</div>
                         </div>
