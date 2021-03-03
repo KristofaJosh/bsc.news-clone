@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '../../elements/card';
 import './news.styles.css';
 import TabCard from '../../molecules/tabcard';
+import PodCast from '../../molecules/podcast';
 
 const NewsSection = () => {
     return (
@@ -11,7 +12,9 @@ const NewsSection = () => {
                     <div>slider</div>
                     <TabCard />
                 </div >
-                <div className={'news-section__content--section-2'}>pod cast</div>
+                <div className={'news-section__content--section-2'}>
+                    <PodCast/>
+                </div>
             </Card>
         </section>
     );
