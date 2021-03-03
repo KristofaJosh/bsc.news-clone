@@ -1,6 +1,5 @@
 import React from 'react';
 import './podcast.styles.css';
-import Card from '../../elements/card';
 
 const podcastContent = [
     {
