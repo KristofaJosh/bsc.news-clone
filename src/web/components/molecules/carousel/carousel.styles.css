@@ -24,5 +24,10 @@
   top: 0;
   text-transform: uppercase;
 }
+@media screen and (max-width: 500px) {
+  .carousel {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=carousel.styles.css.map */

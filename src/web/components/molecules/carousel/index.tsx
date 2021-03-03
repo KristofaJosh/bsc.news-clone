@@ -28,7 +28,7 @@ const images = [
 const Carousel = () => {
     return (
         <div className={'carousel'}>
-            <Slider dots rows={1} adaptiveHeight={true}>
+            <Slider dots rows={1} adaptiveHeight={true} autoplay={true}>
                 {images.map((el, i) => (
                     <a href="/">
                         <div key={i} className={'carousel__content'}>

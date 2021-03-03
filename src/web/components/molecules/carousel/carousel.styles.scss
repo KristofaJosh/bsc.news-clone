@@ -20,7 +20,11 @@
         }
         .top-message {
             top: 0;
-          text-transform: uppercase;
+            text-transform: uppercase;
         }
+    }
+
+    @media screen and (max-width: 500px) {
+        display: none;
     }
 }
