@@ -42,8 +42,10 @@
   right: 0;
   left: 0;
   bottom: 0;
+  z-index: 4;
 }
 .header__content .menu_dropdown--options {
+  background-color: white;
   padding: 20px;
   display: grid;
   gap: 20px;
@@ -69,7 +71,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 203, 10, 0.2);
+  background-color: #fff5ce;
   background-image: url("https://global-uploads.webflow.com/5fad86e1f5867747a5250efa/6024031efd63c59c0b978629_scribble-5.svg");
   background-position: 100% 50%;
   background-size: auto;
@@ -79,6 +81,9 @@
   .header {
     background-color: white;
     border-bottom: 1px solid #4455671c;
+  }
+  .header .menu_dropdown {
+    display: none;
   }
   .header__content_nav--menus {
     display: none;
