@@ -1,0 +1,19 @@
+.carousel {
+    padding: 0 20px;
+    &__content {
+        overflow: hidden;
+        position: relative;
+        > img {
+            width: 100%;
+            height: 450px;
+        }
+        > div {
+            background-color: #0000006e;
+            padding: 19px;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+}
