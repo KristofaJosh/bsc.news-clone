@@ -46,6 +46,8 @@
             left: 0;
             bottom: 0;
             z-index: 4;
+            width: 100%;
+
             &--options {
                 background-color: white;
                 padding: 20px;
@@ -54,10 +56,15 @@
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 .drop-item {
                     border-radius: 20px;
-                    background: #ffcb0a1c;
+                    cursor: pointer;
+                    &:hover {
+                        background: #ffcb0a1c;
+                        > p:first-child {
+                            color: #ffcb0a;
+                        }
+                    }
                     padding: 20px 22px 20px 44px;
                     > p:first-child {
-                        color: #ffcb0a;
                         margin-bottom: 10px;
                         text-transform: capitalize;
                     }
