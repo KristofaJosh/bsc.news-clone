@@ -24,6 +24,11 @@
   top: 0;
   text-transform: uppercase;
 }
+@media screen and (max-width: 950px) {
+  .carousel {
+    padding: 0;
+  }
+}
 @media screen and (max-width: 500px) {
   .carousel {
     display: none;
